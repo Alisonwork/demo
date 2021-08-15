@@ -31,8 +31,10 @@ function getRem(pwidth,prem){
     var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
     html.style.fontSize = oWidth/pwidth*prem + "px";
 }
+ x=0
 let box=document.getElementsByClassName('box')[0]
 box.addEventListener("touchstart", function(e) {
+    x++;
 　　　　e.preventDefault();
 　　　　startX = e.changedTouches[0].pageX,
 　　　　startY = e.changedTouches[0].pageY;
@@ -61,8 +63,33 @@ box.addEventListener("touchstart", function(e) {
 // 　　　　　　alert("just touch");
 // 　　　　}
 　　});
+// let x=0
 box.addEventListener("touchend", function(e) {
-    alert(e.changedTouches.length)
+    // x=x+1
+    // let a=e.changedTouches.length
+    alert(x)
+    x=0
 })
+// document.addEventListener('touchstart', touch, false);
+//     document.addEventListener('touchmove', touch, false);
+//     document.addEventListener('touchend', touch, false);
+//     var tn = 0;
+//     function touch(event) {
+//         var event = event || window.event;
+//         switch (event.type) {
+//             case "touchstart":
+//                 tn=0
+//                 break;
+//             case "touchend":
+//                 tn++;
+//                 if (tn >= 2) { //大于点击次数
+//                     alert(tn)
+//                 }
+//                 break;
+//             case "touchmove":
+//     　　　　　　　// 执行滑动事件
+//                 break;
+//         }
+//    }        
 </script>
 </html>
