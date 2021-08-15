@@ -38,7 +38,7 @@ box.addEventListener("touchstart", function(e) {
 　　　　startY = e.changedTouches[0].pageY;
 　　});
 　　box.addEventListener("touchmove", function(e) {
-    alert(e.changedTouches.length)
+    // alert(e.changedTouches.length)
 　　　　e.preventDefault();
 　　　　moveEndX = e.changedTouches[0].pageX,
 　　　　moveEndY = e.changedTouches[0].pageY,
@@ -61,5 +61,8 @@ box.addEventListener("touchstart", function(e) {
 　　　　　　alert("just touch");
 　　　　}
 　　});
+box.addEventListener("touchmove", function(e) {
+    alert(e.changedTouches.length)
+})
 </script>
 </html>
