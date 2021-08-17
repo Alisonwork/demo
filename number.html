@@ -40,7 +40,10 @@ box.addEventListener("touchstart", function(e) {
 　　　　startY = e.changedTouches[0].pageY;
 　　});
 　　box.addEventListener("touchmove", function(e) {
-    alert(e.changedTouches.length)
+    alert(x)
+      if(x>=2){
+      alert('大于2')
+      }
 　　　　e.preventDefault();
 　　　　moveEndX = e.changedTouches[0].pageX,
 　　　　moveEndY = e.changedTouches[0].pageY,
