@@ -43,6 +43,7 @@ box.addEventListener("touchstart", function(e) {
     alert(x)
       if(x>=2){
       alert('大于2')
+          return false
       }
 　　　　e.preventDefault();
 　　　　moveEndX = e.changedTouches[0].pageX,
