@@ -32,7 +32,7 @@ function getRem(pwidth,prem){
     html.style.fontSize = oWidth/pwidth*prem + "px";
 }
 let x=0
-let y=true
+let y=0
 let box=document.getElementsByClassName('box')[0]
 box.addEventListener("touchstart", function(e) {
     x++;
@@ -41,7 +41,8 @@ box.addEventListener("touchstart", function(e) {
 　　　　startY = e.changedTouches[0].pageY;
 　　});
 　　box.addEventListener("touchmove", function(e) {
-    alert('手指'+e.changedTouches.length)
+      y=e.changedTouches.length
+    alert('手指'+y)
 //       if(x>=2){
 //       alert('大于2啊')
 //       y=false
@@ -56,8 +57,7 @@ box.addEventListener("touchstart", function(e) {
 　　});
 // let x=0
 box.addEventListener("touchend", function(e) {
-    alert('y是'+y)
-    if(x<2&&y){
+    if(x<2&&y<2){
     　　　　if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
 　　　　　　alert("left 2 right");
 　　　　}
