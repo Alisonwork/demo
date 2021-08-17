@@ -40,7 +40,7 @@ box.addEventListener("touchstart", function(e) {
 　　　　startY = e.changedTouches[0].pageY;
 　　});
 　　box.addEventListener("touchmove", function(e) {
-    // alert(e.changedTouches.length)
+    alert(e.changedTouches.length)
 　　　　e.preventDefault();
 　　　　moveEndX = e.changedTouches[0].pageX,
 　　　　moveEndY = e.changedTouches[0].pageY,
@@ -68,9 +68,9 @@ box.addEventListener("touchend", function(e) {
     }
     // x=x+1
     let a=e.changedTouches.length
-    alert('aaa'+x)
-    alert('bbb'+a)
-//     x=0
+//     alert('aaa'+x)
+//     alert('bbb'+a)
+    x=0
 })
 // document.addEventListener('touchstart', touch, false);
 //     document.addEventListener('touchmove', touch, false);
