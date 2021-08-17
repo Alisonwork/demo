@@ -31,7 +31,7 @@ function getRem(pwidth,prem){
     var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
     html.style.fontSize = oWidth/pwidth*prem + "px";
 }
- x=0
+let x=0
 let box=document.getElementsByClassName('box')[0]
 box.addEventListener("touchstart", function(e) {
     x++;
@@ -67,8 +67,8 @@ box.addEventListener("touchstart", function(e) {
 box.addEventListener("touchend", function(e) {
     // x=x+1
     let a=e.changedTouches.length
-    alert('222'+x)
-    alert('111'+a)
+    alert('aaa'+x)
+    alert('bbb'+a)
     x=0
 })
 // document.addEventListener('touchstart', touch, false);
