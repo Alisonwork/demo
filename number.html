@@ -41,13 +41,13 @@ box.addEventListener("touchstart", function(e) {
 　　　　startY = e.changedTouches[0].pageY;
 　　});
 　　box.addEventListener("touchmove", function(e) {
-    alert(x)
-      if(x>=2){
-      alert('大于2啊')
-      y=false
-      }else{
-          y=true
-      }
+    alert('手指'+e.changedTouches.length)
+//       if(x>=2){
+//       alert('大于2啊')
+//       y=false
+//       }else{
+//           y=true
+//       }
 　　　　e.preventDefault();
 　　　　moveEndX = e.changedTouches[0].pageX,
 　　　　moveEndY = e.changedTouches[0].pageY,
