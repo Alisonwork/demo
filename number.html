@@ -49,6 +49,7 @@ box.addEventListener("touchstart", function(e) {
 　　});
 // let x=0
 box.addEventListener("touchend", function(e) {
+    if(x<2){
     　　　　if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
 　　　　　　alert("left 2 right");
 　　　　}
@@ -64,6 +65,7 @@ box.addEventListener("touchend", function(e) {
 　　　　else{
 　　　　　　alert("just touch");
 　　　　}
+    }
     // x=x+1
     let a=e.changedTouches.length
     alert('aaa'+x)
