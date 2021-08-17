@@ -42,7 +42,8 @@ box.addEventListener("touchstart", function(e) {
 　　});
 　　box.addEventListener("touchmove", function(e) {
       
-
+ y=e.changedTouches.length
+    alert('手指呢'+y)
 //       if(x>=2){
 //       alert('大于2啊')
 //       y=false
@@ -57,8 +58,6 @@ box.addEventListener("touchstart", function(e) {
 　　});
 // let x=0
 box.addEventListener("touchend", function(e) {
-     y=e.changedTouches.length
-    alert('手指啊'+y)
     if((x<2&&x>0)&&y<2){
     　　　　if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
 　　　　　　alert("left 2 right");
